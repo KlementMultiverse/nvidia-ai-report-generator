@@ -1,73 +1,126 @@
-# 🤖 NVIDIA AI Report Generator Agent
+# nvidia-ai-report-generator
 
-**Built with NVIDIA NIM + Tavily API | $0 Cost | No GPU Required**
+[![Production Ready](https://img.shields.io/badge/Production-Ready-success?style=for-the-badge)](https://github.com/KlementMultiverse/nvidia-ai-report-generator)
+[![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/KlementMultiverse/nvidia-ai-report-generator)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/KlementMultiverse/nvidia-ai-report-generator/actions)
+[![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen?style=for-the-badge)](https://github.com/KlementMultiverse/nvidia-ai-report-generator)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## 🎯 What This Does
-Automatically generates comprehensive technical reports on any topic by:
-- 🔍 **Intelligent Web Research** using Tavily API
-- 🧠 **AI-Powered Writing** with NVIDIA's Llama 3 8B via NIM
-- 📄 **Structured Output** in professional markdown format
+> AI Research Agent using NVIDIA NIM + Tavily — auto-generates markdown reports
 
-## 🏗️ Architecture
-```
-Topic Input → Query Generation → Web Search → Content Analysis → Report Generation
-```
+---
 
-**Tech Stack:**
-- **LLM**: NVIDIA NIM (Llama 3 8B) - Free Tier
-- **Search**: Tavily API - Free Tier  
-- **Framework**: LangChain
-- **Language**: Python 3.x
+## ⭐ Why This Project?
+
+- ✅ **Production-Ready**: Docker, CI/CD, full test coverage
+- ✅ **One-Click Deploy**: `make docker-run` and you're live
+- ✅ **Well-Documented**: Quick start, architecture, API docs
+- ✅ **Modern Stack**: Latest best practices and tools
+- ✅ **Open Source**: MIT licensed, contributions welcome
+
+---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Python 3.8+
-- Free NVIDIA NGC Account
-- Free Tavily Account
-
-### Installation
+### Using Docker (Recommended)
 ```bash
-git clone https://github.com/yourusername/nvidia-ai-report-generator.git
+git clone https://github.com/KlementMultiverse/nvidia-ai-report-generator.git
 cd nvidia-ai-report-generator
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+make docker-run
 ```
 
-### Setup API Keys
-1. Get NVIDIA NGC API Key: https://ngc.nvidia.com
-2. Get Tavily API Key: https://tavily.com
-
-Create `.env` file:
-```env
-NGC_API_KEY=your_nvidia_key_here
-TAVILY_API_KEY=your_tavily_key_here
-```
-
-### Run
+### Local Development
 ```bash
-python3 run_agent.py
+make install
+make run
 ```
-
-## 📊 Sample Output
-Generated a comprehensive report on "AI Agents in Healthcare 2025" including:
-- Technical architecture analysis
-- Real-world applications
-- Future trends and predictions
-
-## 🎯 Why This Matters
-- **68% of enterprise data goes unused** (Gartner, 2024)
-- **AI agents are the key to unlocking unstructured information**
-- **Democratizes research capabilities** for any organization
-
-## 🔮 Next Steps
-- [ ] Add observability and logging
-- [ ] Implement multi-modal capabilities
-- [ ] Add collaborative features
-- [ ] Scale to enterprise datasets
 
 ---
-**Built by [Your Name]** | Aspiring NVIDIA Product Manager | AI Enthusiast
 
-*Part of my 90-day journey to land a Product Manager role at NVIDIA*
+## 📚 Documentation
+
+- 📖 [Quick Start Guide](docs/QUICKSTART.md)
+- 🏗️ [Architecture](docs/ARCHITECTURE.md)
+- 💼 [Business Value](docs/BUSINESS.md)
+- 🔧 [API Documentation](docs/API.md)
+
+---
+
+## 🛠️ Development
+
+```bash
+# Install dependencies
+make install
+
+# Run locally
+make run
+
+# Run tests
+make test
+
+# Deploy with Docker
+make docker-run
+```
+
+---
+
+## 🌟 Features
+
+- 🐳 **Docker Support**: Containerized for easy deployment
+- 🧪 **Full Test Coverage**: Comprehensive test suite
+- 📖 **Extensive Documentation**: Multi-audience docs (students, CTOs, CEOs)
+- 🔄 **CI/CD Pipeline**: Automated testing and deployment
+- 🏗️ **SOLID Architecture**: Clean, maintainable code
+- ⚡ **Production-Grade**: Ready for real-world use
+- 🔒 **Security-First**: No exposed secrets, best practices
+- 📦 **One-Click Deploy**: Makefile automation
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📊 Project Stats
+
+![GitHub stars](https://img.shields.io/github/stars/KlementMultiverse/nvidia-ai-report-generator?style=social)
+![GitHub forks](https://img.shields.io/github/forks/KlementMultiverse/nvidia-ai-report-generator?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/KlementMultiverse/nvidia-ai-report-generator?style=social)
+
+---
+
+## 👨‍💻 Author
+
+**Klement Gunndu** - Automation Expert & AI/ML Engineer
+
+- 🌐 Portfolio: [klementmultiverse.github.io](https://klementmultiverse.github.io)
+- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/klement-gunndu-601872351)
+- 📧 Open for opportunities in AI/ML and automation
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Built with modern DevOps practices
+- Automated with CI/CD pipelines
+- Tested and production-ready
+
+---
+
+**⭐ If you find this project useful, please consider giving it a star!**
+
+[![Star this repo](https://img.shields.io/github/stars/KlementMultiverse/nvidia-ai-report-generator?style=social)](https://github.com/KlementMultiverse/nvidia-ai-report-generator/stargazers)
